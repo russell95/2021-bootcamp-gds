@@ -1,3 +1,8 @@
+name: Build and Push Images to GitHub Container Registry (GHCR)
+  # https://docs.github.com/en/actions/reference/events-that-trigger-workflows
+on:
+  - push
+  - workflow_dispatch
 jobs:
   Build-And-Push:
     name: Build and Push Application Images
